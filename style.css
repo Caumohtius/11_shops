@@ -8,7 +8,7 @@ body {
 
     font-family: "Roboto", sans-serif;
     font-size: 1rem;
-    color: #3D3D3D;
+    color: #2d2d2dcc;
 }
 
 *,
@@ -20,3 +20,140 @@ body {
 h1, h2, h3, h4, h5, h6 {
     margin: 0;
 }
+
+.page {
+    margin: 0 auto;
+    width: 1200px;
+}
+
+.link {
+    text-decoration: none;
+    color: #575599;
+
+    cursor: pointer;
+    transition: color .2s linear;
+}
+
+.link:hover {
+    color: #617bf3;
+}
+
+.shops {
+    margin-top: 2em;
+}
+
+.shops__title {
+    font-size: 22px;
+    font-weight: 700;
+}
+
+.shops__list-row {
+    display: flex;
+    margin: 0 -20px;
+}
+
+.shops__list-item {
+    padding: 0 20px;
+
+    flex: calc(100% / 3);
+}
+
+.shops__list-street {
+    display: inline-block;
+    margin-top: .5em;
+
+    font-size: 16px;
+}
+
+.shops__list-metro {
+    position: relative;
+
+    margin-left: 1em;
+
+    font-size: 12px;
+    line-height: 2;
+    color: #0000006b;
+}
+
+.shops__list-metro::before {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: -2.5px;
+
+    content: "";
+    width: 5px;
+    height: 5px;
+
+    border-radius: 50%;
+}
+
+.shops__list-metro_blue::before { background-color: #4685fa; }
+
+.shops__list-metro_red::before { background-color: #fa5246; }
+
+.shops__list-metro_purple::before { background-color: #9a46fa; }
+
+.shops__list-map {
+    margin-top: .5em;
+    height: 250px;
+
+    background-color: #f1edcd;
+}
+
+.shops__list-card {
+    display: flex;
+
+    margin-top: 2em;
+}
+
+.shops__list-card-photo {
+    margin-right: 15px;
+    width: 85px;
+    height: 85px;
+
+    background-color: #f1edcd;
+
+    border-radius: 50%;
+}
+
+.shops__list-card-info {
+    line-height: 1.5;
+
+    flex: 1 0 auto;
+}
+
+.shops__list-card-name {
+    margin-bottom: .2em;
+
+    font-size: 16px;
+}
+
+.shops__list-card-status {
+    position: relative;
+
+    margin: .5em 0 0 1em;
+}
+
+.shops__list-card-status::before {
+    position: absolute;
+    top: 50%;
+    right: 100%;
+
+    display: inline-block;
+    margin-right: 5px;
+    margin-top: -4px;
+
+    content: "";
+    width: 8px;
+    height: 8px;
+
+    border-radius: 50%;
+}
+
+.shops__list-card-status_online::before { background-color: #45f562; }
+
+.shops__list-card-status_offline::before { background-color: #c22e2e; }
